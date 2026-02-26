@@ -23,26 +23,31 @@ struct FeedingHistoryView: View {
                 }
                 .pickerStyle(.segmented)
                 
-                HStack {
-                    
-                    VStack(alignment: .leading) {
-                        Text("7 AM")
-                            .font(.title3)
-                            .bold()
-                        Text("Kibble, 1.5 scoops")
-                    }
-                    
-                    Spacer()
-                    
-                    VStack(alignment: .trailing) {
-                        Text("\(Image(systemName: "checkmark.circle.fill"))")
-                            .foregroundStyle(.green)
-                        Text("Russ, at 9 AM")
-                    }
-                }
-                .padding()
-                .border(.black)
+                FeedingView(
+                    scheduledTime: "7 AM",
+                    foodAndAmount: "Kibble, 1.5 scoops",
+                    personAndActualTime: "Russ, at 9:41 AM"
+                )
+
+                FeedingView(
+                    scheduledTime: "11 AM",
+                    foodAndAmount: "Kibble, 1.5 scoops",
+                    personAndActualTime: "Russ, at 12:21 PM"
+                )
                 
+                FeedingView(
+                    scheduledTime: "3 PM",
+                    foodAndAmount: "Kibble, 1.5 scoops",
+                    personAndActualTime: "Claire, at 3:13 PM"
+                )
+
+                FeedingView(
+                    scheduledTime: "7 PM",
+                    foodAndAmount: "Kibble, 1.5 scoops",
+                    personAndActualTime: "Jen, at 6:53 PM"
+                )
+
+
                 Spacer()
             }
             .padding()
