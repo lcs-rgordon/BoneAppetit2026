@@ -6,17 +6,18 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		81954F352F50702900A90EB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81954F312F50702900A90EB5 /* Assets.xcassets */; };
+		81954F362F50702900A90EB5 /* BoneAppetitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81954F322F50702900A90EB5 /* BoneAppetitApp.swift */; };
+		81954F372F50702900A90EB5 /* FeedingHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81954F332F50702900A90EB5 /* FeedingHistoryView.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		81954F232F506FA400A90EB5 /* BoneAppetit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoneAppetit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		81954F312F50702900A90EB5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		81954F322F50702900A90EB5 /* BoneAppetitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoneAppetitApp.swift; sourceTree = "<group>"; };
+		81954F332F50702900A90EB5 /* FeedingHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedingHistoryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		81954F252F506FA400A90EB5 /* BoneAppetit */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = BoneAppetit;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		81954F202F506FA400A90EB5 /* Frameworks */ = {
@@ -32,7 +33,7 @@
 		81954F1A2F506FA400A90EB5 = {
 			isa = PBXGroup;
 			children = (
-				81954F252F506FA400A90EB5 /* BoneAppetit */,
+				81954F342F50702900A90EB5 /* BoneAppetit */,
 				81954F242F506FA400A90EB5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +44,24 @@
 				81954F232F506FA400A90EB5 /* BoneAppetit.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		81954F342F50702900A90EB5 /* BoneAppetit */ = {
+			isa = PBXGroup;
+			children = (
+				81954F312F50702900A90EB5 /* Assets.xcassets */,
+				81954F322F50702900A90EB5 /* BoneAppetitApp.swift */,
+				81954F382F50703500A90EB5 /* Views */,
+			);
+			path = BoneAppetit;
+			sourceTree = "<group>";
+		};
+		81954F382F50703500A90EB5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				81954F332F50702900A90EB5 /* FeedingHistoryView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,9 +78,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				81954F252F506FA400A90EB5 /* BoneAppetit */,
 			);
 			name = BoneAppetit;
 			packageProductDependencies = (
@@ -109,6 +125,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81954F352F50702900A90EB5 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +136,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81954F362F50702900A90EB5 /* BoneAppetitApp.swift in Sources */,
+				81954F372F50702900A90EB5 /* FeedingHistoryView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
