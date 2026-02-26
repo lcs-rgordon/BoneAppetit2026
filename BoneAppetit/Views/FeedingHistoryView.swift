@@ -8,13 +8,22 @@
 import SwiftUI
 
 struct FeedingHistoryView: View {
+    
+    // MARK: Stored properties
+    @State private var selection = "History"
+    
+    // MARK: Computed properties
     var body: some View {
         NavigationStack {
             VStack {
-                Image(systemName: "globe")
-                    .imageScale(.large)
-                    .foregroundStyle(.tint)
-                Text("Hello, world!")
+                Picker("Current Selection", selection: $selection) {
+                    Text("Meals").tag("Meals")
+                    Text("Planned Feedings").tag("Planned Feedings")
+                    Text("History").tag("History")
+                }
+                .pickerStyle(.segmented)
+                
+                Spacer()
             }
             .padding()
             .navigationTitle("Piper")
