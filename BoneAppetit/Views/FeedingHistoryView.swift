@@ -23,34 +23,36 @@ struct FeedingHistoryView: View {
                 }
                 .pickerStyle(.segmented)
                 
-                FeedingView(
-                    scheduledTime: "7 AM",
-                    foodAndAmount: "Kibble, 1.5 scoops",
-                    personAndActualTime: "Russ, at 9:41 AM"
-                )
+                List {
 
-                FeedingView(
-                    scheduledTime: "11 AM",
-                    foodAndAmount: "Kibble, 1.5 scoops",
-                    personAndActualTime: "Russ, at 12:21 PM"
-                )
-                
-                FeedingView(
-                    scheduledTime: "3 PM",
-                    foodAndAmount: "Kibble, 1.5 scoops",
-                    personAndActualTime: "Claire, at 3:13 PM"
-                )
+                    FeedingView(
+                        scheduledTime: "7 AM",
+                        foodAndAmount: "Kibble, 1.5 scoops",
+                        personAndActualTime: "Russ, at 9:41 AM"
+                    )
 
-                FeedingView(
-                    scheduledTime: "7 PM",
-                    foodAndAmount: "Kibble, 1.5 scoops",
-                    personAndActualTime: "Jen, at 6:53 PM"
-                )
+                    FeedingView(
+                        scheduledTime: "11 AM",
+                        foodAndAmount: "Kibble, 1.5 scoops",
+                        personAndActualTime: "Russ, at 12:21 PM"
+                    )
+                    
+                    FeedingView(
+                        scheduledTime: "3 PM",
+                        foodAndAmount: "Kibble, 1.5 scoops",
+                        personAndActualTime: "Claire, at 3:13 PM"
+                    )
 
+                    FeedingView(
+                        scheduledTime: "7 PM",
+                        foodAndAmount: "Kibble, 1.5 scoops",
+                        personAndActualTime: "Jen, at 6:53 PM"
+                    )
+
+                }
 
                 Spacer()
             }
-            .padding()
             .navigationTitle("Piper")
             .toolbar {
                 ToolbarItem(placement: .topBarLeading) {

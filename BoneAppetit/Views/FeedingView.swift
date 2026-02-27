@@ -33,8 +33,6 @@ struct FeedingView: View {
                 Text(personAndActualTime)
             }
         }
-        .padding()
-        .border(.black)
     }
 }
 
